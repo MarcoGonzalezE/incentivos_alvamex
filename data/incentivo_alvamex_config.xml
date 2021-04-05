@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="configuracion_incentivos" model="incentivo.alvamex.configuracion">
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="incentivos_alvamex_vacunacion_view_form" model="ir.ui.view">
+      <field name="name">Incentivo Vacunacion</field>
+      <field name="model">incentivo.alvamex.vacunacion</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="fecha"/>
+              </group>
+              <group>
+                <field name="responsable"/>
+              </group>
+            </group>
+            <group string="Monitoreo de Aplicacion">
+              <notebook>
+                <page string="7 Dias">
+                  <field name="incentivo_7d">
+                    <tree editable="buttom">
+                      <field name="empleado_id" string="Empleado"/>
+                      <field name="granja_id" string="Granja"/>
+                      <field name="cantidad" sum="Total"/>
+                      <field name="incentivo"/>
+                    </tree>
+                  </field>
+                </page>
+                <page string="3 Semanas">
+                  <field name="incentivo_3s">
+                    <tree editable="buttom">
+                      <field name="empleado_id" string="Empleado"/>
+                      <field name="puesto"/>
+                      <field name="granja_id" string="Granja"/>
+                      <field name="cantidad"  sum="Total"/>
+                      <field name="incentivo"/>
+                    </tree>
+                  </field>
+                </page>
+                <page string="8 Semanas">
+                  <field name="incentivo_8s">
+                    <tree editable="buttom">
+                      <field name="empleado_id" string="Empleado"/>
+                      <field name="puesto"/>
+                      <field name="granja_id" string="Granja"/>
+                      <field name="cantidad"  sum="Total"/>
+                      <field name="incentivo"/>
+                    </tree>
+                  </field>
+                </page>
+                <page string="12 Semanas">
+                  <field name="incentivo_12s">
+                    <tree editable="buttom">
+                      <field name="empleado_id" string="Empleado"/>
+                      <field name="puesto"/>
+                      <field name="granja_id" string="Granja"/>
+                      <field name="cantidad"  sum="Total"/>
+                      <field name="incentivo"/>
+                    </tree>
+                  </field>
+                </page>
+                <page string="16 Semanas">
+                  <field name="incentivo_16s">
+                    <tree editable="buttom">
+                      <field name="empleado_id" string="Empleado"/>
+                      <field name="puesto"/>
+                      <field name="granja_id" string="Granja"/>
+                      <field name="cantidad"  sum="Total"/>
+                      <field name="incentivo"/>
+                    </tree>
+                  </field>
+                </page>
+                <page string="Manejo SubCutaneo">
+                  <field name="incentivo_subcutaneo">
+                    <tree editable="buttom">
+                      <field name="empleado_id" string="Empleado"/>
+                      <field name="puesto"/>
+                      <field name="granja_id" string="Granja"/>
+                      <field name="cantidad"  sum="Total"/>
+                      <field name="incentivo"/>
+                    </tree>
+                  </field>
+                </page>
+              </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="incentivos_alvamex_vacunacion_view_tree" model="ir.ui.view">
+      <field name="name">Incentivo Vacunacion</field>
+      <field name="model">incentivo.alvamex.vacunacion</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="fecha"/>
+          <field name="responsable"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="incentivos_alvamex_vacunacion_view_action" model="ir.actions.act_window">
+      <field name="name">Incentivos Vacunacion</field>
+      <field name="res_model">incentivo.alvamex.vacunacion</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p>Crear Incentivo de Vacunacion</p>
+      </field>
+    </record>
+
+  </data>
+</odoo>

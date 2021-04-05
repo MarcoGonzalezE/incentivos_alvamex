@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="incentivo_alvamex_config_view_form" model="ir.ui.view">
+			<field name="name">Incentivos Alvamex Configuracion"</field>
+			<field name="model">incentivo.alvamex.configuracion</field>
+			<field name="arch" type="xml">
+				<form string="Configuracion Incentivos" class="oe_form_configuration">
+					<header>
+						<button string="Aplicar" type="object" name="save" class="oe_highlight"/>
+                        <button string="Cancelar" type="object" name="cancel" class="oe_link" special="cancel"/>
+					</header>
+					<group string="Vacunación">
+						<group string="Equipos">
+							<field name="incentivo_personal_7d" string="7 Dias">
+								<tree editable="buttom">
+									<field name="empleado_id" string="Empleado"/>
+								</tree>
+							</field>
+							<field name="incentivo_personal_3s" string="3 Semanas">
+								<tree editable="buttom">
+									<field name="empleado_id" string="Empleado"/>
+									<field name="puesto"/>
+				                   </tree>
+				               </field>
+				               <field name="incentivo_personal_8s" string="8 Semanas">
+								<tree editable="buttom">
+									<field name="empleado_id" string="Empleado"/>
+									<field name="puesto"/>
+				                   </tree>
+				               </field>
+				               <field name="incentivo_personal_12s" string="12 Semanas">
+								<tree editable="buttom">
+									<field name="empleado_id" string="Empleado"/>
+									<field name="puesto"/>
+				                   </tree>
+				               </field>
+				               <field name="incentivo_personal_16s" string="16 Semanas">
+								<tree editable="buttom">
+									<field name="empleado_id" string="Empleado"/>
+									<field name="puesto"/>
+				                   </tree>
+				               </field>
+				               <field name="incentivo_personal_subcutaneo" string="Manejo SubCutaneo">
+								<tree editable="buttom">
+									<field name="empleado_id" string="Empleado"/>
+									<field name="puesto"/>
+				                   </tree>
+				               </field>
+				           </group>
+				           <group string="Incentivos">
+							<field name="incentivo_7d" string="7 Dias">
+								<tree editable="buttom">
+									<field name="tipo_incentivo"/>
+									<field name="cantidad" string="Aves por Dia"/>
+									<field name="incentivo"/>
+								</tree>
+							</field>
+							<field name="incentivo_3s" string="3 Semanas">
+								<tree editable="buttom">
+									<field name="tipo_incentivo"/>
+									<field name="cantidad" string="Aves por Dia"/>
+									<field name="incentivo"/>
+				                   </tree>
+				               </field>
+				               <field name="incentivo_8s" string="8 Semanas">
+								<tree editable="buttom">
+									<field name="tipo_incentivo"/>
+									<field name="cantidad" string="Aves por Dia"/>
+									<field name="incentivo"/>
+				                   </tree>
+				               </field>
+				               <field name="incentivo_12s" string="12 Semanas">
+								<tree editable="buttom">
+									<field name="tipo_incentivo"/>
+									<field name="cantidad" string="Aves por Dia"/>
+									<field name="incentivo"/>
+				                   </tree>
+				               </field>
+				               <field name="incentivo_16s" string="16 Semanas">
+								<tree editable="buttom">
+									<field name="tipo_incentivo"/>
+									<field name="cantidad" string="Aves por Dia"/>
+									<field name="incentivo"/>
+				                   </tree>
+				               </field>
+				               <field name="incentivo_subcutaneo" string="Manejo SubCutaneo">
+								<tree editable="buttom">
+									<field name="tipo_incentivo"/>
+									<field name="cantidad" string="Aves por Dia"/>
+									<field name="incentivo"/>
+				                   </tree>
+				               </field>
+				           </group>
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="incentivo_alvamex_config_action" model="ir.actions.act_window">
+			<field name="name">Incentivos Alvamex Configuracion"</field>
+			<field name="res_model">incentivo.alvamex.configuracion</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">form</field>
+			<field name="res_id">1</field>
+			<field name="target">inline</field>
+		</record>
+	</data>
+</odoo>
