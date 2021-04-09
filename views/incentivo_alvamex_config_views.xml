@@ -14,41 +14,41 @@
 						<group string="Equipos">
 							<field name="incentivo_personal_7d" string="7 Dias">
 								<tree editable="buttom">
-									<field name="empleado_id" string="Empleado"/>
+									<field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
 								</tree>
 							</field>
 							<field name="incentivo_personal_3s" string="3 Semanas">
 								<tree editable="buttom">
-									<field name="empleado_id" string="Empleado"/>
+									<field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
 									<field name="puesto"/>
-				                   </tree>
-				               </field>
-				               <field name="incentivo_personal_8s" string="8 Semanas">
+								</tree>
+							</field>
+							<field name="incentivo_personal_8s" string="8 Semanas">
 								<tree editable="buttom">
-									<field name="empleado_id" string="Empleado"/>
+									<field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
 									<field name="puesto"/>
-				                   </tree>
-				               </field>
-				               <field name="incentivo_personal_12s" string="12 Semanas">
+								</tree>
+							</field>
+							<field name="incentivo_personal_12s" string="12 Semanas">
 								<tree editable="buttom">
-									<field name="empleado_id" string="Empleado"/>
+									<field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
 									<field name="puesto"/>
-				                   </tree>
-				               </field>
-				               <field name="incentivo_personal_16s" string="16 Semanas">
+								</tree>
+							</field>
+							<field name="incentivo_personal_16s" string="16 Semanas">
 								<tree editable="buttom">
-									<field name="empleado_id" string="Empleado"/>
+									<field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
 									<field name="puesto"/>
-				                   </tree>
-				               </field>
-				               <field name="incentivo_personal_subcutaneo" string="Manejo SubCutaneo">
+								</tree>
+							</field>
+							<field name="incentivo_personal_subcutaneo" string="Manejo SubCutaneo">
 								<tree editable="buttom">
-									<field name="empleado_id" string="Empleado"/>
+									<field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
 									<field name="puesto"/>
-				                   </tree>
-				               </field>
-				           </group>
-				           <group string="Incentivos">
+								</tree>
+							</field>
+						</group>
+						<group string="Incentivos">
 							<field name="incentivo_7d" string="7 Dias">
 								<tree editable="buttom">
 									<field name="tipo_incentivo"/>
@@ -61,37 +61,38 @@
 									<field name="tipo_incentivo"/>
 									<field name="cantidad" string="Aves por Dia"/>
 									<field name="incentivo"/>
-				                   </tree>
-				               </field>
-				               <field name="incentivo_8s" string="8 Semanas">
+								</tree>
+							</field>
+							<field name="incentivo_8s" string="8 Semanas">
 								<tree editable="buttom">
 									<field name="tipo_incentivo"/>
 									<field name="cantidad" string="Aves por Dia"/>
 									<field name="incentivo"/>
-				                   </tree>
-				               </field>
-				               <field name="incentivo_12s" string="12 Semanas">
+								</tree>
+							</field>
+							<field name="incentivo_12s" string="12 Semanas">
 								<tree editable="buttom">
 									<field name="tipo_incentivo"/>
 									<field name="cantidad" string="Aves por Dia"/>
 									<field name="incentivo"/>
-				                   </tree>
-				               </field>
-				               <field name="incentivo_16s" string="16 Semanas">
+								</tree>
+							</field>
+							<field name="incentivo_16s" string="16 Semanas">
 								<tree editable="buttom">
 									<field name="tipo_incentivo"/>
 									<field name="cantidad" string="Aves por Dia"/>
 									<field name="incentivo"/>
-				                   </tree>
-				               </field>
-				               <field name="incentivo_subcutaneo" string="Manejo SubCutaneo">
+								</tree>
+							</field>
+							<field name="incentivo_subcutaneo" string="Manejo SubCutaneo">
 								<tree editable="buttom">
 									<field name="tipo_incentivo"/>
+									<field name="granja_ids" widget="many2many_tags" string="Granjas" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
 									<field name="cantidad" string="Aves por Dia"/>
 									<field name="incentivo"/>
-				                   </tree>
-				               </field>
-				           </group>
+								</tree>
+							</field>
+						</group>
 					</group>
 				</form>
 			</field>

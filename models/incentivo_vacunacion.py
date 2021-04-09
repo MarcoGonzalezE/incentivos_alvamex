@@ -72,10 +72,50 @@ class IncentivoAlvamexVacunacionLineas(models.Model):
     puesto = fields.Selection([('aplicador', 'Aplicador'), ('sacador', 'Sacador')], String="Puesto")
     cantidad = fields.Integer(String="Cantidad")
     granja_id = fields.Many2one('gp.farm', String="Granja")
-    incentivo = fields.Float(String="Incentivo")
+    incentivo = fields.Float(String="Incentivo", compute="incentivos_cantidad")
     incentivo7d_id = fields.Many2one('incentivo.alvamex.vacunacion', String="Incentivo")
     incentivo3s_id = fields.Many2one('incentivo.alvamex.vacunacion', String="Incentivo")
     incentivo8s_id = fields.Many2one('incentivo.alvamex.vacunacion', String="Incentivo")
     incentivo12s_id = fields.Many2one('incentivo.alvamex.vacunacion', String="Incentivo")
     incentivo16s_id = fields.Many2one('incentivo.alvamex.vacunacion', String="Incentivo")
     incentivosub_id = fields.Many2one('incentivo.alvamex.vacunacion', String="Incentivo")
+
+    @api.onchange('granja_id','cantidad')
+    def incentivos_cantidad(self):       
+        for r in self:
+            valor = self.env['incentivo.alvamex.configuracion'].search([])
+            flag = False
+            if r.incentivo7d_id:
+                for x in valor.incentivo_7d:
+                    if r.cantidad >= x.cantidad:
+                        r.incentivo = x.incentivo
+                        flag = True
+            if r.incentivo3s_id:
+                for x in valor.incentivo_3s:
+                    if r.cantidad >= x.cantidad:
+                        r.incentivo = x.incentivo
+                        flag = True
+            if r.incentivo8s_id:
+                for x in valor.incentivo_8s:
+                    if r.cantidad >= x.cantidad:
+                        r.incentivo = x.incentivo
+                        flag = True
+            if r.incentivo12s_id:
+                for x in valor.incentivo_12s:
+                    if r.cantidad >= x.cantidad:
+                        r.incentivo = x.incentivo
+                        flag = True
+            if r.incentivo16s_id:
+                for x in valor.incentivo_16s:
+                    if r.cantidad >= x.cantidad:
+                        r.incentivo = x.incentivo
+                        flag = True
+            if r.incentivosub_id:
+                for x in valor.incentivo_subcutaneo:
+                    if r.cantidad >= x.cantidad:
+                        for g in x.granja_ids:
+                            if r.granja_id.name == g.name:
+                                r.incentivo = x.incentivo
+                        flag = True
+            if flag == False:
+                r.incentivo = 0

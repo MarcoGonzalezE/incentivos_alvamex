@@ -29,6 +29,7 @@ class IncentivosVacunacionConfiguracion(models.Model):
 	tipo_incentivo = fields.Char(String="Tipo Incentivo")
 	incentivo = fields.Float(String="Incentivo")
 	cantidad = fields.Integer(String="Cantidad")
+	granja_ids = fields.Many2many('gp.farm', String="Granjas")
 	incentivo7d_id = fields.Many2one('incentivo.alvamex.configuracion', String="Incentivo")
 	incentivo3s_id = fields.Many2one('incentivo.alvamex.configuracion', String="Incentivo")
 	incentivo8s_id = fields.Many2one('incentivo.alvamex.configuracion', String="Incentivo")

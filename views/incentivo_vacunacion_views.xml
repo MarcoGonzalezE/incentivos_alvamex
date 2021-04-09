@@ -20,65 +20,65 @@
                 <page string="7 Dias">
                   <field name="incentivo_7d">
                     <tree editable="buttom">
-                      <field name="empleado_id" string="Empleado"/>
-                      <field name="granja_id" string="Granja"/>
-                      <field name="cantidad" sum="Total"/>
-                      <field name="incentivo"/>
+                      <field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
+                      <field name="granja_id" string="Granja" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
+                      <field name="cantidad"  sum="Total Cantidad de Aves por Dia"/>
+                      <field name="incentivo" sum="Total de Incentivos"/>
                     </tree>
                   </field>
                 </page>
                 <page string="3 Semanas">
                   <field name="incentivo_3s">
                     <tree editable="buttom">
-                      <field name="empleado_id" string="Empleado"/>
+                      <field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
                       <field name="puesto"/>
-                      <field name="granja_id" string="Granja"/>
-                      <field name="cantidad"  sum="Total"/>
-                      <field name="incentivo"/>
+                      <field name="granja_id" string="Granja" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
+                      <field name="cantidad"  sum="Total Cantidad de Aves por Dia"/>
+                      <field name="incentivo" sum="Total de Incentivos"/>
                     </tree>
                   </field>
                 </page>
                 <page string="8 Semanas">
                   <field name="incentivo_8s">
                     <tree editable="buttom">
-                      <field name="empleado_id" string="Empleado"/>
+                      <field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
                       <field name="puesto"/>
-                      <field name="granja_id" string="Granja"/>
-                      <field name="cantidad"  sum="Total"/>
-                      <field name="incentivo"/>
+                      <field name="granja_id" string="Granja" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
+                      <field name="cantidad"  sum="Total Cantidad de Aves por Dia"/>
+                      <field name="incentivo" sum="Total de Incentivos"/>
                     </tree>
                   </field>
                 </page>
                 <page string="12 Semanas">
                   <field name="incentivo_12s">
                     <tree editable="buttom">
-                      <field name="empleado_id" string="Empleado"/>
+                      <field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
                       <field name="puesto"/>
-                      <field name="granja_id" string="Granja"/>
-                      <field name="cantidad"  sum="Total"/>
-                      <field name="incentivo"/>
+                      <field name="granja_id" string="Granja" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
+                      <field name="cantidad"  sum="Total Cantidad de Aves por Dia"/>
+                      <field name="incentivo" sum="Total de Incentivos"/>
                     </tree>
                   </field>
                 </page>
                 <page string="16 Semanas">
                   <field name="incentivo_16s">
                     <tree editable="buttom">
-                      <field name="empleado_id" string="Empleado"/>
+                      <field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
                       <field name="puesto"/>
-                      <field name="granja_id" string="Granja"/>
-                      <field name="cantidad"  sum="Total"/>
-                      <field name="incentivo"/>
+                      <field name="granja_id" string="Granja" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
+                      <field name="cantidad"  sum="Total Cantidad de Aves por Dia"/>
+                      <field name="incentivo" sum="Total de Incentivos"/>
                     </tree>
                   </field>
                 </page>
                 <page string="Manejo SubCutaneo">
                   <field name="incentivo_subcutaneo">
                     <tree editable="buttom">
-                      <field name="empleado_id" string="Empleado"/>
+                      <field name="empleado_id" string="Empleado" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
                       <field name="puesto"/>
-                      <field name="granja_id" string="Granja"/>
-                      <field name="cantidad"  sum="Total"/>
-                      <field name="incentivo"/>
+                      <field name="granja_id" string="Granja" options="{'no_quick_create': true,'no_create ': True, 'no_create_edit' : True}"/>
+                      <field name="cantidad"  sum="Total Cantidad de Aves por Dia"/>
+                      <field name="incentivo" sum="Total de Incentivos"/>
                     </tree>
                   </field>
                 </page>
