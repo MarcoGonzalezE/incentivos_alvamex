@@ -29,6 +29,7 @@
         'views/incentivo_alvamex_config_views.xml',
         'views/menus.xml',
         'data/incentivo_alvamex_config.xml',
+        'wizard/incentivo_vacunacion_wizard_templates.xml'
         #'views/templates.xml',
     ],
     'installable': True,

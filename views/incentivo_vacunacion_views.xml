@@ -109,5 +109,42 @@
       </field>
     </record>
 
+    <!--REPORTE INCENTIVOS VACUNACION -->
+    <record id="action_incentivos_vacunacion_reporte" model="ir.ui.view">
+      <field name="name">Reporte Incentivo Vacunacion</field>
+      <field name="model">incentivo.alvamex.wizard</field>
+      <field name="arch" type="xml">
+        <form string="Reporte Vacunacion">
+          <group>
+            <group>
+              <field name="responsable"/>
+            </group>
+            <group>
+              <field name="fecha_inicio" readonly="1"/>
+              <field name="fecha_final" readonly="1"/>
+            </group>
+          </group>
+          <group>
+            <notebook>
+              <page string="Incentivos">
+                <field name="reporte_lineas" readonly="1">
+                  <tree>
+                    <field name="empleado"/>
+                    <field name="incentivo_total" sum="Total de Incentivos"/>
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </group>
+          <footer>
+            <button string="Imprimir" type="object" class="oe_highlight" name="imprimir"/>
+            <button class="oe_link" special="cancel" string="Cerrar"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+    <act_window id="action_incentivos_vacunacion" key2="client_action_multi" name="Reporte Incentivos" res_model="incentivo.alvamex.wizard" src_model="incentivo.alvamex.vacunacion" target="new" view_mode="form"/>
+
   </data>
 </odoo>
